@@ -9,6 +9,7 @@ processing and futures in Scala.
 ## Requirements
 - JDK 8
 - Scala 2.12.8
+- ScalaCheck 1.14.0
 - SBT 1.2.8
 
 We recommend using [SDKMan](https://sdkman.io/) for getting these requirements.
