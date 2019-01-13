@@ -26,11 +26,12 @@ class Sorter(val parallelism: Int, val numOfInts: Int,
         .getLines.map(_.toLong)
         .grouped(numOfInts).withPartial(true).map(_.toArray)
         .grouped(parallelism).withPartial(true).map { chunks =>
-          chunks.par.foreach { Sorting.quickSort(_)(ordering) }
+          chunks.par.foreach { Sorting.quickSort(_) }
           val tmp1 = combineSortedChunksIntoIterator(chunks.map(_.iterator))
           val file = java.io.File.createTempFile("sort", "chunk", tempDir)
           file.deleteOnExit()
-          val writer = new PrintWriter(new BufferedWriter(new FileWriter(file)))
+          val writer = new PrintWriter(new BufferedWriter(
+            new FileWriter(file)))
           try
             tmp1.foreach(writer.println)
           finally
@@ -45,7 +46,8 @@ class Sorter(val parallelism: Int, val numOfInts: Int,
     }
   }
 
-  private def combineSortedChunksIntoIterator(seqOfStreams: Seq[Iterator[Long]]): Iterator[Long] = {
+  private def combineSortedChunksIntoIterator(
+      seqOfStreams: Seq[Iterator[Long]]): Iterator[Long] = {
     val tmp1 = seqOfStreams.filter(_.hasNext)
     if (tmp1.length == 1)
       return tmp1.head
