@@ -9,7 +9,8 @@
 
 package sorter.parallel
 
-import java.io.{File, PrintWriter}
+import java.io.{BufferedWriter, File, FileWriter, PrintWriter}
+
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.{Failure, Sorting, Success, Try}
@@ -29,9 +30,9 @@ class Sorter(val parallelism: Int, val numOfInts: Int,
           val tmp1 = combineSortedChunksIntoIterator(chunks.map(_.iterator))
           val file = java.io.File.createTempFile("sort", "chunk", tempDir)
           file.deleteOnExit()
-          val writer = new PrintWriter(file)
+          val writer = new PrintWriter(new BufferedWriter(new FileWriter(file)))
           try
-            tmp1.map(_.toString).foreach(writer.println)
+            tmp1.foreach(writer.println)
           finally
             writer.close()
           file
