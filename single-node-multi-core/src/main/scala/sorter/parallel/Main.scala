@@ -13,7 +13,7 @@ import org.apache.commons.cli.{DefaultParser, HelpFormatter, Options, ParseExcep
 import scala.util.{Failure, Success}
 
 object Main extends App {
-  val options = new Options()
+  val options = new Options
   options.addOption(CLIOption.builder("w").longOpt("numOfWorkers")
     .hasArg.required(true).desc("Number of workers to use").build)
   options.addOption(CLIOption.builder("i").longOpt("intsPerWorker")
@@ -34,10 +34,10 @@ object Main extends App {
     }
   }
 
-  val parallelism = math.max(cmdLine.getOptionValue("w").toInt, 1)
-  val intsPerWorker = math.max(cmdLine.getOptionValue("i").toInt, 1000)
-  val filename = cmdLine.getOptionValue("f")
-  val tempDirName = cmdLine.getOptionValue("t")
+  val parallelism = math.max(cmdLine.getOptionValue('w').toInt, 1)
+  val intsPerWorker = math.max(cmdLine.getOptionValue('i').toInt, 1)
+  val filename = cmdLine.getOptionValue('f')
+  val tempDirName = cmdLine.getOptionValue('t')
   val output = s"$filename.sorted"
   val master = new Sorter(parallelism, intsPerWorker, tempDirName)
   master.sort(filename, output) match {
