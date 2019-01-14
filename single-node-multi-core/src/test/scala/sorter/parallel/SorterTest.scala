@@ -26,7 +26,6 @@ object SorterSpec extends Properties("Sorter") {
       val ints = 1.to(numOfInts).map {_ => Random.nextLong }.toList
       val inFile = File.createTempFile("sort", "test")
       val tempDir = Files.createTempDirectory("snmc").toFile
-      tempDir.deleteOnExit
       val writer = new PrintWriter(inFile)
       try
         ints.map(_.toString).foreach(writer.println)
@@ -36,8 +35,8 @@ object SorterSpec extends Properties("Sorter") {
       val sorter = new Sorter(numOfWorkers, intsPerWorker, tempDir.toString)
       sorter.sort(inFile.getAbsolutePath, outFile.getAbsolutePath)
       val result = Source.fromFile(outFile).getLines.map(_.toLong).toList
-      outFile.delete
       inFile.delete
+      outFile.delete
       tempDir.delete
 
       ints.sorted == result
