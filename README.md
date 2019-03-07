@@ -1,8 +1,6 @@
-Scala implementations of parallel/distributed external sorters capable of
-handling data that does not fit into memory (RAM).
+Scala implementations of parallel/distributed external sorters capable of sorting data that does not all fit into memory (RAM).
 
-- **Single-node-multi-core** implementation utilizes multiple cores on a single
-  node.
+- **Single-node-multi-core** implementation utilizes multiple cores on a single node.
 
 ## Attribution
 
