@@ -21,8 +21,7 @@ private object Sorter {
   val NUM_OF_LONGS = 4096
 }
 
-class Sorter(val parallelism: Int, val numOfInts: Int,
-             val tempDirName: String) {
+class Sorter(val parallelism: Int, val numOfInts: Int, val tempDirName: String) {
   private val tempDir = new File(tempDirName)
 
   def sort(inFile: String, outFile: String): Try[Unit] = {
@@ -60,9 +59,8 @@ class Sorter(val parallelism: Int, val numOfInts: Int,
       fs.close()
   }
 
-  private def combineSortedChunksIntoIterator(
-      seqOfStreams: Seq[Iterator[Long]]): Iterator[Long] = {
-    val tmp1 = seqOfStreams.filter(_.hasNext)
+  private def combineSortedChunksIntoIterator(intChunks: Seq[Iterator[Long]]): Iterator[Long] = {
+    val tmp1 = intChunks.filter(_.hasNext)
     if (tmp1.length == 1)
       return tmp1.head
 
@@ -81,19 +79,17 @@ class Sorter(val parallelism: Int, val numOfInts: Int,
     }
   }
 
-  private def combineSortedChunksIntoFile(sortedChunkFiles: Iterator[File],
-                                          outFile: String): Try[Unit] = {
+  private def combineSortedChunksIntoFile(sortedChunkFiles: Iterator[File], outFile: String): Try[Unit] = {
     val sink = new PrintWriter(new File(outFile))
+    val sources = sortedChunkFiles.map(new FileInputStream(_))
     try {
-      val sources = sortedChunkFiles.map(new FileInputStream(_))
-      try {
-        val seqOfLines = sources.map(readLongsFrom).toSeq
-        combineSortedChunksIntoIterator(seqOfLines).foreach(sink.println)
-        Success(())
-      } finally
-        sources.foreach(_.close())
-    } finally
+      val intChunks = sources.map(readLongsFrom)
+      combineSortedChunksIntoIterator(intChunks.toSeq).foreach(sink.println)
+      Success(())
+    } finally {
+      sources.foreach(_.close())
       sink.close()
+    }
   }
 
   private def readLongsFrom(fs: FileInputStream): Iterator[Long] = {
