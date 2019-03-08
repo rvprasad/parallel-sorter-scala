@@ -1,0 +1,144 @@
+File: sort-input/5000000.txt, Heap: 200m, Workers: 1, Ints Per Worker: 2016492
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+6.36
+File: sort-input/5000000.txt, Heap: 200m, Workers: 2, Ints Per Worker: 1638400
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+5.83
+File: sort-input/5000000.txt, Heap: 200m, Workers: 4, Ints Per Worker: 1092266
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.78
+File: sort-input/5000000.txt, Heap: 200m, Workers: 8, Ints Per Worker: 655360
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.66
+File: sort-input/5000000.txt, Heap: 400m, Workers: 1, Ints Per Worker: 4032984
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+5.45
+File: sort-input/5000000.txt, Heap: 400m, Workers: 2, Ints Per Worker: 3276800
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+5.01
+File: sort-input/5000000.txt, Heap: 400m, Workers: 4, Ints Per Worker: 2184533
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.30
+File: sort-input/5000000.txt, Heap: 400m, Workers: 8, Ints Per Worker: 1310720
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.40
+File: sort-input/5000000.txt, Heap: 800m, Workers: 1, Ints Per Worker: 8065969
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+5.19
+File: sort-input/5000000.txt, Heap: 800m, Workers: 2, Ints Per Worker: 6553600
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.95
+File: sort-input/5000000.txt, Heap: 800m, Workers: 4, Ints Per Worker: 4369066
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.41
+File: sort-input/5000000.txt, Heap: 800m, Workers: 8, Ints Per Worker: 2621440
+Sorted sort-input/5000000.txt into sort-input/5000000.txt.sorted
+4.29
+File: sort-input/10000000.txt, Heap: 200m, Workers: 1, Ints Per Worker: 2016492
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+11.96
+File: sort-input/10000000.txt, Heap: 200m, Workers: 2, Ints Per Worker: 1638400
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+10.98
+File: sort-input/10000000.txt, Heap: 200m, Workers: 4, Ints Per Worker: 1092266
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+9.87
+File: sort-input/10000000.txt, Heap: 200m, Workers: 8, Ints Per Worker: 655360
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+8.74
+File: sort-input/10000000.txt, Heap: 400m, Workers: 1, Ints Per Worker: 4032984
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+10.76
+File: sort-input/10000000.txt, Heap: 400m, Workers: 2, Ints Per Worker: 3276800
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+10.53
+File: sort-input/10000000.txt, Heap: 400m, Workers: 4, Ints Per Worker: 2184533
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+8.96
+File: sort-input/10000000.txt, Heap: 400m, Workers: 8, Ints Per Worker: 1310720
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+7.85
+File: sort-input/10000000.txt, Heap: 800m, Workers: 1, Ints Per Worker: 8065969
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+9.16
+File: sort-input/10000000.txt, Heap: 800m, Workers: 2, Ints Per Worker: 6553600
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+8.92
+File: sort-input/10000000.txt, Heap: 800m, Workers: 4, Ints Per Worker: 4369066
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+7.39
+File: sort-input/10000000.txt, Heap: 800m, Workers: 8, Ints Per Worker: 2621440
+Sorted sort-input/10000000.txt into sort-input/10000000.txt.sorted
+7.43
+File: sort-input/50000000.txt, Heap: 200m, Workers: 1, Ints Per Worker: 2016492
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+60.38
+File: sort-input/50000000.txt, Heap: 200m, Workers: 2, Ints Per Worker: 1638400
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+61.27
+File: sort-input/50000000.txt, Heap: 200m, Workers: 4, Ints Per Worker: 1092266
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+52.17
+File: sort-input/50000000.txt, Heap: 200m, Workers: 8, Ints Per Worker: 655360
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+45.18
+File: sort-input/50000000.txt, Heap: 400m, Workers: 1, Ints Per Worker: 4032984
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+58.65
+File: sort-input/50000000.txt, Heap: 400m, Workers: 2, Ints Per Worker: 3276800
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+54.21
+File: sort-input/50000000.txt, Heap: 400m, Workers: 4, Ints Per Worker: 2184533
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+45.35
+File: sort-input/50000000.txt, Heap: 400m, Workers: 8, Ints Per Worker: 1310720
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+40.05
+File: sort-input/50000000.txt, Heap: 800m, Workers: 1, Ints Per Worker: 8065969
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+51.23
+File: sort-input/50000000.txt, Heap: 800m, Workers: 2, Ints Per Worker: 6553600
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+51.90
+File: sort-input/50000000.txt, Heap: 800m, Workers: 4, Ints Per Worker: 4369066
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+41.12
+File: sort-input/50000000.txt, Heap: 800m, Workers: 8, Ints Per Worker: 2621440
+Sorted sort-input/50000000.txt into sort-input/50000000.txt.sorted
+38.08
+File: sort-input/100000000.txt, Heap: 200m, Workers: 1, Ints Per Worker: 2016492
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+122.29
+File: sort-input/100000000.txt, Heap: 200m, Workers: 2, Ints Per Worker: 1638400
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+109.60
+File: sort-input/100000000.txt, Heap: 200m, Workers: 4, Ints Per Worker: 1092266
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+105.79
+File: sort-input/100000000.txt, Heap: 200m, Workers: 8, Ints Per Worker: 655360
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+89.23
+File: sort-input/100000000.txt, Heap: 400m, Workers: 1, Ints Per Worker: 4032984
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+110.84
+File: sort-input/100000000.txt, Heap: 400m, Workers: 2, Ints Per Worker: 3276800
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+108.82
+File: sort-input/100000000.txt, Heap: 400m, Workers: 4, Ints Per Worker: 2184533
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+92.49
+File: sort-input/100000000.txt, Heap: 400m, Workers: 8, Ints Per Worker: 1310720
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+79.24
+File: sort-input/100000000.txt, Heap: 800m, Workers: 1, Ints Per Worker: 8065969
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+114.34
+File: sort-input/100000000.txt, Heap: 800m, Workers: 2, Ints Per Worker: 6553600
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+100.99
+File: sort-input/100000000.txt, Heap: 800m, Workers: 4, Ints Per Worker: 4369066
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+88.60
+File: sort-input/100000000.txt, Heap: 800m, Workers: 8, Ints Per Worker: 2621440
+Sorted sort-input/100000000.txt into sort-input/100000000.txt.sorted
+78.70
