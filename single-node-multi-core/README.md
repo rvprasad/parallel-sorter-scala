@@ -23,6 +23,10 @@ Execute `java -jar target/scala-2.12/snmc-assembly-1.0.jar -w 4 -i 100000 -f num
 - The argument to `-f` is the name of the file containing the integers to be sorted; one per line.
 - The argument to `-t` is the name of the folder in which the prgoram can create temporary files can be created.
 
+## Evaluation
+
+An evaluation of this implementation on desktop and Raspberry Pi 3B can be found [here](https://medium.com/@rvprasad/parallel-external-sorting-175c7a9247cb).
+
 ## Attribution
 
 Copyright (c) 2019, Venkatesh-Prasad Ranganath
